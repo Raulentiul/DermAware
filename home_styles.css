@@ -36,6 +36,10 @@ margin-bottom: 10px;
         height: auto;
         padding: 10px;
     }
+@font-face {
+        font-family: 'Trench';
+        src: url('C:\Users\mirun\Desktop\UniHackRosu\trench100free.otf') format('Trench');
+      }
 
     header h2 {
         font-size: 12px;
