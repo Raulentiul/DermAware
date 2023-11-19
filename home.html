@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DermAware</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="home_styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="banner" onclick="scrollToMain()">
+        <div class="banner-overlay">
+            <div class="banner-menu">
+                <a href="contact.html">Contact Us</a>
+                <a href="map.html">Map</a>
+                <a href="newsletter.html">Newsletter</a>
+            </div>
+            <h2>Welcome to Derm Aware</h2>
+            <p>Your guide to healthy skin</p>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        function scrollToMain() {
+            const content = document.querySelector('.artwork-container');
+            const yOffset = content.offsetTop;
+            window.scrollTo({ top: yOffset, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', function() {
+            const bannerOverlay = document.querySelector('.banner-overlay');
+            const bannerHeight = document.querySelector('.banner').clientHeight;
+            const scrolledHeight = window.pageYOffset;
+            const opacity = 1 - (scrolledHeight / bannerHeight);
+            bannerOverlay.style.opacity = opacity;
+            if (opacity <= 0) {
+                bannerOverlay.classList.add('hide');
+            } else {
+                bannerOverlay.classList.remove('hide');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var alertElement = document.getElementById('myAlert');
+            alertElement.addEventListener('click', function() {
+                alertElement.style.display = 'none';
+            });
+        });
+    </script>
+
+    <div class="artwork-container">
+    </div>
+    
+
+    <div class="artwork-container">
+       
+    </div>
+    <div class="button-container">
+        <a href="check_skin.html" class="pink-button">Press to check your skin!</a>
+    </div>
+    <div class="object-container">
+        <div class="object">
+            <div class="circle">
+                <img src="Bandage.svg" alt="Bandage Icon" class="icon bandage-icon">
+            </div>
+            <div class="rounded-box">
+                <p>Recommendations</p>
+            </div>
+        </div>
+        <div class="object">
+            <div class="circle">
+                <img src="Map.svg" alt="Map Icon" class="icon map-icon">
+            </div>
+            <div class="rounded-box">
+                <p>Nearby Aid</p>
+            </div>
+        </div>
+        <div class="object">
+            <div class="circle">
+                <img src="Computer.svg" alt="Computer Icon" class="icon computer-icon">
+            </div>
+            <div class="rounded-box">
+                <p>Latest Technology</p>
+            </div>
+        </div>
+        <div class="object">
+            <div class="circle">
+                <img src="Hands.svg" alt="Hands Icon" class="icon hands-icon">
+            </div>
+            <div class="rounded-box">
+                <p>Find Specialists</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Keep in mind that the app doesn't replace a specialist's recommendation!</p>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        function scrollToMain() {
+            const content = document.querySelector('.artwork-container');
+            const yOffset = content.offsetTop;
+            window.scrollTo({ top: yOffset, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', function() {
+            const bannerOverlay = document.querySelector('.banner-overlay');
+            const bannerHeight = document.querySelector('.banner').clientHeight;
+            const scrolledHeight = window.pageYOffset;
+            const opacity = 1 - (scrolledHeight / bannerHeight);
+            bannerOverlay.style.opacity = opacity;
+            if (opacity <= 0) {
+                bannerOverlay.classList.add('hide');
+            } else {
+                bannerOverlay.classList.remove('hide');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var alertElement = document.getElementById('myAlert');
+
+            alertElement.addEventListener('click', function() {
+                alertElement.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
