@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miruna Spineanu's Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'TimeBurner';
+            background-color: #d6f1ca;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #5c9675;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #5c9675;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        nav ul li a:hover {
+            background-color: #33492c;
+        }
+        
+        .artwork-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .artwork-item {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .artwork-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .artwork-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .artwork-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .artwork-item:hover .overlay {
+            opacity: 1;
+        }
+        
+        .artwork-item .overlay i {
+            font-size: 40px;
+            color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .artwork-item:hover .overlay i {
+            transform: scale(1.2);
+        }
+        
+      
+        footer {
+            background-color: #5c9675;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        footer a:hover {
+            color: #666;
+        }
+        
+        
+        .banner {
+      position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('paleta.jpg');
+    background-size: cover;
+    background-position: center;
+}
+        
+        .banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        .banner-overlay.hide {
+            opacity: 0;
+        }
+        
+        .banner h2 {
+            font-size: 36px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .banner p {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-overlay">
+            <h2>Welcome to my Portfolio</h2>
+            <p>Explore my artworks</p>
+        </div>
+    </div>
+    <header>
+        <h1>Miruna Spineanu</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="illustration.html">Illustration</a></li>
+            <li><a href="paintings.html">Paintings</a></li>
+            <li><a href="documents.html">Documents and Magazines</a></li>
+            <li><a href="3dwork.html">3D Work</a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+        </ul>
+    </nav>
+    <div class="artwork-container">
+        <div class="artwork-item" onclick="location.href='illustration.html';">
+            <img src="LikeClockwork.png" alt="Illustrations">
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="artwork-item" onclick="location.href='paintings.html';">
+            <img src="Painting1.jpg" alt="Paintings">
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="artwork-item" onclick="location.href='documents.html';">
+            <img src="Sorting.png" alt="Documents">
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="artwork-item" onclick="location.href='3dwork.html';">
+            <img src="ShaprImage.png" alt="3D Work">
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="artwork-item" onclick="location.href='marketing.html';">
+            <img src="example-marketing.jpg" alt="Marketing">
+            <div class="overlay">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Get in contact with me!</p>
+        <p><a href="mailto:miruna.spineanu03@e-uvt.ro">miruna.spineanu03@e-uvt.ro</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script>
+        function scrollToMain() {
+            const mainSection = document.getElementById('main');
+            mainSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', function() {
+            const bannerOverlay = document.querySelector('.banner-overlay');
+            const bannerHeight = document.querySelector('.banner').clientHeight;
+            const scrolledHeight = window.pageYOffset;
+            const opacity = 1 - (scrolledHeight / bannerHeight);
+            bannerOverlay.style.opacity = opacity;
+            if (opacity <= 0) {
+                bannerOverlay.classList.add('hide');
+            } else {
+                bannerOverlay.classList.remove('hide');
+            }
+        });
+    </script>
+</body>
+</html>

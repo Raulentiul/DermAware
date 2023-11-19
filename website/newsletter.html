@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DermAware</title>
+    <link href="check_skin.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <style>
+        body {
+            overflow-x : hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Trench', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        mark {
+            background-color: pink;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background-color: #ea0451;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            height: 50px;
+        }
+
+        #logo-container {
+            display: flex;
+            align-items: center;
+            padding-left: 20px; 
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            overflow: hidden;
+            margin-right: 20px; 
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #ea0451;
+            position: relative;
+        }
+
+        .divider {
+            position: absolute;
+            top: 50%;
+            right: -5px; 
+            height: 50%; 
+            border-right: 2px solid #fff;
+        }
+
+        .divider:last-child {
+            border-right: none; 
+        }
+
+        .newsletter-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        .newsletter-image,
+        .newsletter-image2,
+        .newsletter-image3 {
+            flex: 1;
+            margin: 10px;
+            overflow: hidden;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .newsletter-image img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .newsletter-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-height: 100%; 
+            overflow-y: auto; 
+            margin: 10px;
+        }
+
+        .newsletter-text p {
+            margin: 10px 0; 
+        }
+
+        .horizontal-line {
+            width: 100%;
+            height: 3px;
+            background-color: pink;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .newsletter-image img {
+            width: 70%;
+        }
+        .newsletter-image2 img {
+            width: 120%;
+        }
+        .newsletter-image3 img {
+            width: 110%;
+        }
+
+        .background-image {
+            background-image: url('doctor2.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 20px;
+            text-align: center;
+            
+        }
+        h2 {
+            font-size: 35px;
+            margin-top: 20px;
+            text-align: center;
+            color:#ea0451;
+        }
+
+        @media screen and (max-width: 768px) {
+            .newsletter-content {
+                width: 90%;
+            }
+
+            .newsletter-image,
+            .newsletter-image2,
+            .newsletter-image3 {
+                flex: 1 100%;
+                margin: 10px 0;
+            }
+
+            .newsletter-text {
+                flex: 1 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div id="logo-container">
+            <div id="logo">Derm Aware</div>
+        </div>
+        <nav>
+            <a href="home.html">Home<span class="divider"></span></a>
+            <a href="map.html">Map<span class="divider"></span></a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <h1>Derm Aware Newsletter</h1>
+    
+    <div class="newsletter-content">
+        <div class="newsletter-image">
+            <img src="newsletter_pic1.jpg" alt="Newsletter Image">
+        </div>
+        <div class="newsletter-text">
+            <h2>How to protect yourself from skin cancer</h2>
+
+            <p>
+                Skin cancer, <mark> encompassing melanoma</mark>, squamous cell carcinoma, and basal cell carcinoma, has manifested as a prevalent global health issue. Statistical trends underscore an alarming surge in diagnoses, prompting a rigorous examination of the role played by prolonged and unprotected exposure to solar ultraviolet (UV) rays. The nuanced effects of UVA and UVB rays on cellular DNA integrity have emerged as a focal point in understanding the mechanistic link between sun exposure and the genesis of cancerous lesions.
+            </p>
+            <div>
+                <p>
+                    Limiting direct exposure to the sun during its peak hours, typically between 10 a.m. and 4 p.m., is a strategic maneuver in minimizing risks. Seeking refuge under the natural shade of trees, umbrellas, or other structures becomes a practical means of reducing the intensity of UV rays and safeguarding skin health.
+                </p>
+            </div>
+            <p>
+                Protective eyewear becomes indispensable in the pursuit of comprehensive sun protection. Sunglasses that block 100% of UVA and UVB rays not only shield the eyes from damage but also reduce the risk of skin cancers around the sensitive eye area.
+            </p>
+            <p>
+                <mark>Scheduled skin examinations with a dermatologist</mark>, especially for those with a history of skin cancer or other risk factors, provide a professional and systematic approach to early detection. Timely intervention significantly improves treatment outcomes.
+            </p>
+        </div>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="newsletter-content">
+        <div class="newsletter-text">
+            <h2>How to not mistake other diseases for cancer</h2>
+
+            <p>
+                Psoriasis, a chronic autoimmune disorder, emerges as a prime candidate for confusion. Its hallmark red, raised, and scaly patches bear an uncanny resemblance to certain forms of skin cancer. However, the distinction lies in the underlying mechanism; psoriasis is an <mark>immune-mediated condition</mark> demanding specialized care rather than evoking the imminent threat of malignancy.
+            </p>
+            <div>
+                <p>
+                    Seborrheic Dermatitis, often misconstrued due to its red and inflamed appearance, adds to the tapestry of <mark>misunderstood skin conditions</mark>. Manifesting as flaky, itchy skin in areas abundant in oil glands, seborrheic dermatitis prompts <mark>concerns of malignancy</mark>. Yet, unlike cancer, this condition is manageable with proper skincare and does not pose life-threatening risks.
+                </p>
+            </div>
+            <p>
+                Actinic Keratosis (AK), a precursor to certain skin cancers, stands on the borderline between benign and malignant. The rough, scaly patches it presents on sun-exposed skin can be mistaken for more serious conditions. However, with <mark>timely intervention</mark>, the progression to invasive cancer can often be averted.
+            </p>
+        </div>
+        <div class="newsletter-image2">
+            <img src="newsletter_pic2.jpg" alt="Newsletter Image">
+        </div>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="newsletter-content">
+        <div class="newsletter-image3">
+            <img src="newsletter_pic3.jpg" alt="Newsletter Image">
+        </div>
+        <div class="newsletter-text">
+            <h2>How important are check-ups?</h2>
+            <p>
+                The saying <mark>"prevention is better than cure"</mark> resonates powerfully in the context of cancer. Regular check-ups serve as a proactive measure, enabling the identification of cancer at its nascent stages.
+                <div>
+                    <p>
+                        The financial burden of cancer treatment is substantial, and the <mark>complexity of interventions</mark> escalates as the disease progresses. Regular check-ups, by identifying cancer in its infancy, not only enhance treatment success rates but also alleviate the economic strain on healthcare systems and individuals alike.
+            </p>
+        </div>
+        <p>
+            Each individual's susceptibility to cancer varies based on genetic predispositions, lifestyle choices, and environmental factors. Regular check-ups enable healthcare professionals to conduct personalized risk assessments, tailoring screening protocols to individual profiles. This personalized approach ensures that high-risk individuals receive more frequent and targeted screenings, maximizing the chances of early detection and intervention.            </p>
+            </p>
+            <p>
+           
+            
+                By embracing the ethos of <mark>preventive healthcare</mark>, individuals not only safeguard their own well-being but also contribute to the broader fabric of societal health, laying the foundation for a resilient and proactive future.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
